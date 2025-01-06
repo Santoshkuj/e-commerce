@@ -18,7 +18,7 @@ const uploads = multer({
         if(extname){
             cb(null,true)
         }else{
-            cb(new Error('unsupported file type'+extname, false))
+            cb(new Error('unsupported file type'+extname), false)
             return;
         }
     }
